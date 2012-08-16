@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<productState xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.2.0.0" Id="7317a0a3-ed07-4554-8670-19746d14f293" xmlns="http://schemas.microsoft.com/visualstudio/patterning/runtime/productstate">
+  <products>
+    <product Id="3b632b33-d8a9-4bb2-8118-ee38ba2ffb52" definitionId="2c52bbfe-442d-4f40-8f6f-7df75dd99cac" definitionName="Application" instanceName="SampleCorpSystem" extensionId="a5e9f15b-ad7f-4201-851e-186dd8db3bc9" extensionName="NServiceBus Studio" author="NServiceBus" version="3.2.0.0">
+      <properties>
+        <property Id="f6f3adb2-4115-4929-ba8d-a8d2a5e49643" definitionId="fad5bb76-e58a-4d6f-a4dd-4d460d1d56e5" definitionName="ForwardReceivedMessagesTo" rawValue="audit" />
+        <property Id="dc51e55d-9e09-4119-b2da-eda0aa9ee6e0" definitionId="2d4e9c90-92f5-4b3b-a413-49796b498035" definitionName="ErrorQueue" rawValue="error" />
+        <property Id="435562e6-24fe-472c-b204-5e8852376c30" definitionId="8823a0ac-36e9-47a6-9007-705cd12080a8" definitionName="NServiceBusVersion" rawValue="3.2.6" />
+        <property Id="e836fc58-81e8-4bdc-9b55-cc4ebe84ba82" definitionId="0580d214-a417-4747-b859-2ad7596b5092" definitionName="ExtensionPath" rawValue="C:\Users\Harry Chou\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\NServiceBus\NServiceBus Studio\3.2.0.0\" />
+      </properties>
+      <views>
+        <view Id="28294663-fbe6-4b41-8b69-83319e6c7677" definitionId="6bc9143a-3e32-4dee-b950-2aa11e4c5f5d" definitionName="Design">
+          <elements>
+            <collection Id="fa74e9a3-6526-46c7-8918-2c36d77f7c06" definitionId="25802dff-4552-4b8a-9fec-4943a9f20c26" definitionName="Services" instanceName="Services" />
+            <collection Id="4613da91-775f-4fb5-b43a-982234b3acb5" definitionId="ad8ac730-01f5-47d8-bd53-5a1bc52ccb3b" definitionName="Endpoints" instanceName="Endpoints" />
+            <collection Id="3026c7dd-609a-4318-8e02-4e3f476843bb" definitionId="f847dee0-d0b7-4270-932f-8b18ceb74f21" definitionName="Infrastructure" instanceName="Infrastructure" />
+            <element Id="4a84f292-f43f-48a7-9d0f-41ea4ccb1315" definitionId="f08604f7-cbcd-4f58-bd9b-ca1b64f72f5d" definitionName="ContractsProject" instanceName="SampleCorpSystem.Contract">
+              <references>
+                <reference Id="bdfa6436-e892-40ae-8af4-4079909e3164" value="solution://f9ce1175-e2ee-45a2-a483-0264850a7f31/" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;SampleCorpSystem.Contract&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+              </references>
+            </element>
+            <element Id="60bc71e2-e1bb-495b-97a0-2903302d77ea" definitionId="640eb378-e12e-4b7d-8362-f384c114dd76" definitionName="InternalMessagesProject" instanceName="SampleCorpSystem.InternalMessages">
+              <references>
+                <reference Id="c2abf1c4-0d2b-4873-bfa4-f194c60b6db3" value="solution://3f890798-937a-4b53-b656-0460e3a4df86/" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;SampleCorpSystem.InternalMessages&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+              </references>
+            </element>
+          </elements>
+        </view>
+        <view Id="dcea9a69-1597-4f00-aa47-21e1ba32073f" definitionId="2b81bb1a-4ca7-4e8b-9743-aa9eb19e2a94" definitionName="Deployment" />
+      </views>
+    </product>
+  </products>
+</productState>
