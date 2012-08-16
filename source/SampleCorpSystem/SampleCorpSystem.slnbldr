@@ -12,7 +12,38 @@
         <view Id="28294663-fbe6-4b41-8b69-83319e6c7677" definitionId="6bc9143a-3e32-4dee-b950-2aa11e4c5f5d" definitionName="Design">
           <elements>
             <collection Id="fa74e9a3-6526-46c7-8918-2c36d77f7c06" definitionId="25802dff-4552-4b8a-9fec-4943a9f20c26" definitionName="Services" instanceName="Services" />
-            <collection Id="4613da91-775f-4fb5-b43a-982234b3acb5" definitionId="ad8ac730-01f5-47d8-bd53-5a1bc52ccb3b" definitionName="Endpoints" instanceName="Endpoints" />
+            <collection Id="4613da91-775f-4fb5-b43a-982234b3acb5" definitionId="ad8ac730-01f5-47d8-bd53-5a1bc52ccb3b" definitionName="Endpoints" instanceName="Endpoints">
+              <extensionProducts>
+                <product Id="db4e3ab4-310a-48e3-b54f-3a271f35bc95" definitionId="f3d852c6-be54-479c-9017-e48c2cd8f958" definitionName="AbstractEndpoint" instanceName="MVCSalesApp" extensionId="e91869eb-ba2e-4420-baad-df72525d4fe5">
+                  <properties>
+                    <property Id="5c2e438f-12ee-40ea-9fcb-f067428b7c0d" definitionId="17071a33-b4ef-471f-ae45-542bbc8607bb" definitionName="Namespace" />
+                    <property Id="9e51744f-c4c2-42bc-9403-3365268c5977" definitionId="be113726-7324-4586-a721-60f24553455e" definitionName="SLA" />
+                    <property Id="7dfe0476-890f-4d4b-a736-335552b54c3f" definitionId="3c970a61-a6dd-457c-bc7a-deac2d8891fd" definitionName="MessageEndpointMappingsConfig" />
+                    <property Id="8a1a2ce3-f81b-4969-a1fe-a9a8bdd9e890" definitionId="ac9c4752-a476-4513-82f2-ddd6d693084e" definitionName="CommandSenderNeedsRegistration" rawValue="False" />
+                    <property Id="a4bf6e6c-9655-4c07-8939-c6f62160f301" definitionId="c867dd59-8f45-49a0-bca0-bf9edb08b8af" definitionName="MessageConventions" rawValue="namespace SampleCorpSystem.MVCSalesApp&#xD;&#xA;{&#xD;&#xA;    public class MessageConventions : IWantToRunBeforeConfiguration&#xD;&#xA;    {&#xD;&#xA;        public void Init()&#xD;&#xA;        {&#xD;&#xA;            Configure.Instance&#xD;&#xA;            .DefiningCommandsAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;SampleCorpSystem.InternalMessages&quot;))&#xD;&#xA;            .DefiningEventsAs(t =&gt; t.Namespace != null &amp;&amp; t.Namespace.StartsWith(&quot;SampleCorpSystem.Contract&quot;));&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" />
+                    <property Id="23b96fa7-dbe7-4efa-a4e9-acdccc0d30e2" definitionId="e6d01a16-d621-40d8-80f1-27ebe65d40c2" definitionName="ErrorQueue" rawValue="error" />
+                    <property Id="e5711526-36cb-4b7d-bd26-ec8a97e63577" definitionId="9d6fdf06-f740-4f0a-a07b-642169a2cf16" definitionName="ForwardReceivedMessagesTo" rawValue="audit" />
+                    <property Id="0fbb9dd9-5550-4617-a5b4-f24653c4686b" definitionId="7f2a6812-2339-43bc-8aa3-10231268c5b1" definitionName="NumberOfWorkerThreads" rawValue="1" />
+                  </properties>
+                  <references>
+                    <reference Id="9084f84b-166d-4aee-bc6b-69b6cbfb6bc2" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;SampleCorpSystem.MVCSalesApp&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
+                    <reference Id="92c45cc3-4fde-4e95-be89-49526282d8e1" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/410b7133-9c33-4a4a-a802-58d79ce23017" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;MessageForwardingInCaseOfFaultConfig.config&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;ca819ca0-d783-4bf2-b309-fc189df05d74&quot;&#xD;&#xA;}" />
+                    <reference Id="525b3d0f-f471-4108-884c-9efb5d6eead5" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/d85e4114-1f1e-40a4-b890-df3026668504" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;MsmqTransportConfig.config&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;8354d126-51d3-47a5-a49d-9b4a213c121f&quot;&#xD;&#xA;}" />
+                    <reference Id="1e5d2e9d-08f8-4d55-9623-265c7f173382" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/7dfa5e29-04bf-4173-be3e-5e886836f81c" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;UnicastBusConfig.config&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;dab92bfc-c0fd-4a2c-8a6f-95049aa5823b&quot;&#xD;&#xA;}" />
+                    <reference Id="315b4bba-0103-4e93-be88-760d36fb0aef" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/004d8d94-fd5e-44b3-a394-f085f2a07486" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;MessageConventions.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;dbb8512f-cf2b-4f4a-b31f-e589c75605fe&quot;&#xD;&#xA;}" />
+                    <reference Id="3b057027-7f88-44e2-8d46-d8b665914afc" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/468ec3f3-2b4d-41fc-9ae7-ab95e731137c" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;Logging.config&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;8c01fc5d-e456-4438-a740-7d0b8c1b2993&quot;&#xD;&#xA;}" />
+                    <reference Id="cf3ef978-1ded-4a41-beac-43f99be87f61" value="solution://f6c8a216-c197-4dac-9cee-c65f51cf3007/a16b073c-6e3e-4d33-8ede-d8b6e3f2c214" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;packages.config&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;c8cd5796-69ca-4b35-afcb-2ad12107811b&quot;&#xD;&#xA;}" />
+                  </references>
+                  <views>
+                    <view Id="13c11577-edbe-4ed5-8783-d789e2c138a5" definitionId="00aeed68-3b28-4e59-8b91-cefb9ad308a7" definitionName="DefaultView">
+                      <elements>
+                        <collection Id="5389d395-80fc-43c4-8ccd-bc5b9ad988a3" definitionId="0a1f4ed3-bea5-4caf-b04d-715f489a0a5d" definitionName="Components" instanceName="Components" />
+                      </elements>
+                    </view>
+                  </views>
+                </product>
+              </extensionProducts>
+            </collection>
             <collection Id="3026c7dd-609a-4318-8e02-4e3f476843bb" definitionId="f847dee0-d0b7-4270-932f-8b18ceb74f21" definitionName="Infrastructure" instanceName="Infrastructure" />
             <element Id="4a84f292-f43f-48a7-9d0f-41ea4ccb1315" definitionId="f08604f7-cbcd-4f58-bd9b-ca1b64f72f5d" definitionName="ContractsProject" instanceName="SampleCorpSystem.Contract">
               <references>
