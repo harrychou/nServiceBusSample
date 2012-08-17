@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9258EB58-3FFD-4220-863C-D4735D9487EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SampleCorpSystem.BackendProcessingApp</RootNamespace>
+    <AssemblyName>SampleCorpSystem.BackendProcessingApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EndpointConfig.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <ItemGuid>c3ded1a1-20a9-481a-9854-29dbd9c88ba5</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\MessageConventions.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <ItemGuid>3e811abf-4b07-4bd9-ac02-8293b273d406</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>93e01216-88ee-4b7c-bad1-bc05d353957e</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>b32ef3c5-6e80-49a6-808a-8183c766437c</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MsmqTransportConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>f3f82502-fb1e-4e3e-ab2b-b2bbbac1d8d3</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>3b06944d-92c7-4482-8197-53f39f96b28d</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>b7c2e421-aac5-4b77-8d7a-783a5ef95463</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <ItemGuid>e47bd91e-286f-497a-b653-abe999608b39</ItemGuid>
+    </None>
+    <Content Include="Infrastructure\Logging.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>8357db30-dcf3-4c7c-9b28-73a22ea1aaf9</ItemGuid>
+    </Content>
+    <None Include="packages.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <ItemGuid>14eb25b5-6b8d-4f68-a0d5-ed56ad6d59ff</ItemGuid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{13930F
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCorpSystem.MVCSalesApp", "SampleCorpSystem.MVCSalesApp\SampleCorpSystem.MVCSalesApp.csproj", "{F6C8A216-C197-4DAC-9CEE-C65F51CF3007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCorpSystem.BackendProcessingApp", "SampleCorpSystem.BackendProcessingApp\SampleCorpSystem.BackendProcessingApp.csproj", "{9258EB58-3FFD-4220-863C-D4735D9487EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,14 @@ Global
 		{3F890798-937A-4B53-B656-0460E3A4DF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F890798-937A-4B53-B656-0460E3A4DF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F890798-937A-4B53-B656-0460E3A4DF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C8A216-C197-4DAC-9CEE-C65F51CF3007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C8A216-C197-4DAC-9CEE-C65F51CF3007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C8A216-C197-4DAC-9CEE-C65F51CF3007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C8A216-C197-4DAC-9CEE-C65F51CF3007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9258EB58-3FFD-4220-863C-D4735D9487EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9258EB58-3FFD-4220-863C-D4735D9487EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9258EB58-3FFD-4220-863C-D4735D9487EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9258EB58-3FFD-4220-863C-D4735D9487EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
