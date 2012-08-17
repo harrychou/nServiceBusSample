@@ -3,7 +3,7 @@ using NServiceBus;
  
 namespace SampleCorpSystem.BackendProcessingApp
 {
-	public partial class EndpointConfig : IConfigureThisEndpoint    
+	public partial class EndpointConfig : IConfigureThisEndpoint, AsA_Server    
 	{
     }
 }
