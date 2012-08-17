@@ -11,7 +11,29 @@
       <views>
         <view Id="28294663-fbe6-4b41-8b69-83319e6c7677" definitionId="6bc9143a-3e32-4dee-b950-2aa11e4c5f5d" definitionName="Design">
           <elements>
-            <collection Id="fa74e9a3-6526-46c7-8918-2c36d77f7c06" definitionId="25802dff-4552-4b8a-9fec-4943a9f20c26" definitionName="Services" instanceName="Services" />
+            <collection Id="fa74e9a3-6526-46c7-8918-2c36d77f7c06" definitionId="25802dff-4552-4b8a-9fec-4943a9f20c26" definitionName="Services" instanceName="Services">
+              <elements>
+                <element Id="dba1a761-5ae5-4381-959f-a844e3de4ec6" definitionId="4aac6b0a-1178-4761-ac92-d2989a83335b" definitionName="Service" instanceName="Sales">
+                  <elements>
+                    <collection Id="4e2c390e-e55b-4c6f-ac16-c34609c66911" definitionId="14dd0a39-32b5-4814-9ed5-4279aba392af" definitionName="Contract" instanceName="Contract">
+                      <elements>
+                        <collection Id="599605ba-ad2a-40c5-9b4d-277789f33343" definitionId="6b6c2df4-f261-4d62-819f-70e170c196ca" definitionName="Events" instanceName="Events">
+                          <properties>
+                            <property Id="f50e1d9f-bade-4ba3-91a6-b7d0cbf842ce" definitionId="33af7451-bb69-4898-932b-245a595d9551" definitionName="Namespace" rawValue="SampleCorpSystem.Contract.Sales" />
+                          </properties>
+                        </collection>
+                        <collection Id="d5e1ca18-3db0-4ccb-a1d2-fd6c3e4eaf5f" definitionId="fa52a7b2-5908-451e-a185-4eb52d4e6343" definitionName="Commands" instanceName="Commands">
+                          <properties>
+                            <property Id="9897099b-e49a-4990-b450-4ff9b06f3f38" definitionId="480d695b-e1f8-4869-adef-bd2aa2a2db53" definitionName="Namespace" rawValue="SampleCorpSystem.InternalMessages.Sales" />
+                          </properties>
+                        </collection>
+                      </elements>
+                    </collection>
+                    <collection Id="e674bffd-2b07-4f67-ba36-793309079171" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components" />
+                  </elements>
+                </element>
+              </elements>
+            </collection>
             <collection Id="4613da91-775f-4fb5-b43a-982234b3acb5" definitionId="ad8ac730-01f5-47d8-bd53-5a1bc52ccb3b" definitionName="Endpoints" instanceName="Endpoints">
               <extensionProducts>
                 <product Id="db4e3ab4-310a-48e3-b54f-3a271f35bc95" definitionId="f3d852c6-be54-479c-9017-e48c2cd8f958" definitionName="AbstractEndpoint" instanceName="MVCSalesApp" extensionId="e91869eb-ba2e-4420-baad-df72525d4fe5">
