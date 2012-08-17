@@ -37,6 +37,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\SubmitOrder.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f84294897-a115-482d-a2f1-05d1a7299deb</SourceModelReference>
+      <ItemGuid>88241854-7dc8-47e5-bef0-3837cd4a6c0b</ItemGuid>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

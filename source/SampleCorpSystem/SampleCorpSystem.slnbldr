@@ -26,10 +26,74 @@
                           <properties>
                             <property Id="9897099b-e49a-4990-b450-4ff9b06f3f38" definitionId="480d695b-e1f8-4869-adef-bd2aa2a2db53" definitionName="Namespace" rawValue="SampleCorpSystem.InternalMessages.Sales" />
                           </properties>
+                          <elements>
+                            <element Id="84294897-a115-482d-a2f1-05d1a7299deb" definitionId="c2f83a83-1117-43d5-b427-3ede53888fa4" definitionName="Command" instanceName="SubmitOrder">
+                              <references>
+                                <reference Id="f224ff9b-8f11-4bca-a596-9c45341e14aa" value="solution://3f890798-937a-4b53-b656-0460e3a4df86/88241854-7dc8-47e5-bef0-3837cd4a6c0b" kind="Microsoft.VisualStudio.Patterning.Extensibility.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;{CodeIdentifier}.cs&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;e0cce5ad-fee6-4711-89d3-01a04457a8f0&quot;&#xD;&#xA;}" />
+                              </references>
+                            </element>
+                          </elements>
                         </collection>
                       </elements>
                     </collection>
-                    <collection Id="e674bffd-2b07-4f67-ba36-793309079171" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components" />
+                    <collection Id="e674bffd-2b07-4f67-ba36-793309079171" definitionId="54f49375-e376-4668-94e0-df31f6184f56" definitionName="Components" instanceName="Components">
+                      <elements>
+                        <element Id="2a05ec5e-0afc-4417-b26e-c354236c75e4" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="SubmitOrderSender">
+                          <properties>
+                            <property Id="82a69f9b-cb9a-4cd8-86d9-04711d5025cb" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" />
+                            <property Id="6a680818-dba2-4964-945d-54f5d95deac4" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using SampleCorpSystem.InternalMessages.Sales;&#xD;&#xA;" />
+                            <property Id="d45df2fd-3250-4a06-b723-8a501da3404c" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" />
+                            <property Id="9bdd3677-fc46-499e-a4a5-c0b13374662c" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;public IBus Bus { get; set; }&#xD;&#xA;&#x9;&#x9;public void Send(SubmitOrder message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;Bus.Send(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;" />
+                            <property Id="2464e7fb-aac6-4cd0-a242-95f0943505e3" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" />
+                            <property Id="01462e11-2371-4d68-93c0-3138da022566" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
+                          </properties>
+                          <elements>
+                            <collection Id="5225cc2b-7212-4967-9a16-3db2718fd1bb" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends">
+                              <elements>
+                                <element Id="e64813f8-16cc-4a82-8c90-4c1eabbdc067" definitionId="0d8a0645-22b8-48e8-be8c-774c7fc5442d" definitionName="CommandLink" instanceName="SubmitOrder">
+                                  <properties>
+                                    <property Id="e597f4fb-eed2-47fa-8d50-a51af22521c4" definitionId="3c664bf2-ab15-4c03-ba95-1c753da1b1eb" definitionName="CommandId" rawValue="84294897-a115-482d-a2f1-05d1a7299deb" />
+                                    <property Id="ba149cc8-a76e-4d2e-9ffa-4054b9bcdaeb" definitionId="f428580a-cc0d-48dd-892d-4415510233e4" definitionName="CommandName" rawValue="SubmitOrder" />
+                                    <property Id="b3b0bcbc-b94c-4615-a732-b177392c4fca" definitionId="8d360b93-c5cd-4084-97e0-ba1596e571e9" definitionName="Namespace" />
+                                    <property Id="2bd62a47-8ffb-4064-805b-562ef211787d" definitionId="59e50f56-3448-4a47-8ff5-a0846dcaa402" definitionName="ComponentName" rawValue="SubmitOrderSender" />
+                                    <property Id="e20722c5-41ca-49d7-95a8-9180022a462f" definitionId="1f273940-c91b-4c31-80cb-478aa8a9a4c6" definitionName="SenderNeedsRegistration" rawValue="False" />
+                                    <property Id="fb86f6ab-9fb9-45fc-ba53-526f2a3192f2" definitionId="60e718ea-738d-43d5-adad-9ae862e48daf" definitionName="ComponentBaseType" />
+                                  </properties>
+                                </element>
+                              </elements>
+                            </collection>
+                            <collection Id="f290500b-46d3-4d60-b59b-8c4fe8a6cbb2" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes" />
+                          </elements>
+                        </element>
+                        <element Id="96e53701-01fb-4559-a10e-74370399ee6e" definitionId="f1e3bdfb-c55d-4600-b1bc-d12c8b27318f" definitionName="Component" instanceName="SubmitOrderProcessor">
+                          <properties>
+                            <property Id="6b4638a4-6e53-401b-9f26-ddbbe7ed49da" definitionId="304a32af-b6be-4401-a3f1-c30c3d107cf2" definitionName="Namespace" />
+                            <property Id="2d5c113d-0744-4e59-9e02-987cd4564912" definitionId="b85a7c13-b983-4252-90ef-9eaf8be1146d" definitionName="AdditionalUsings" rawValue="using SampleCorpSystem.InternalMessages.Sales;&#xD;&#xA;" />
+                            <property Id="4c814873-1809-4d56-81d7-52ba521c2187" definitionId="6ff7444a-d751-42e4-9233-98a97c2b95b7" definitionName="Inherits" rawValue=": IHandleMessages&lt;SubmitOrder&gt;" />
+                            <property Id="9dc5dc86-63a6-450f-ae45-71d1a23a4a97" definitionId="f8f807c4-03ba-4cfb-ad60-583be21676c4" definitionName="ClassBody" rawValue="&#xD;&#xA;&#x9;&#x9;public void Handle(SubmitOrder message)&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;this.HandleImplementation(message);&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;partial void HandleImplementation(SubmitOrder message);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;public IBus Bus { get; set; }&#xD;&#xA;" />
+                            <property Id="bee4e13f-d4af-4180-9816-8969a3e14575" definitionId="4b413384-c62a-45a7-87dc-d8542bae3618" definitionName="CustomClassBody" rawValue="&#xD;&#xA;        partial void HandleImplementation(SubmitOrder message)&#xD;&#xA;        {&#xD;&#xA;            // Implement your handler logic here.&#xD;&#xA;            Console.WriteLine(&quot;Sales received &quot; + message.GetType().Name);&#xD;&#xA;        }&#xD;&#xA;" />
+                            <property Id="2ea558a5-3586-4a7b-b76a-d2fab30c9d23" definitionId="61fc0cf8-b810-4091-8212-5441b8e67513" definitionName="IsSaga" rawValue="False" />
+                          </properties>
+                          <elements>
+                            <collection Id="61311a46-9cd2-4fcb-a788-af933cf3fe20" definitionId="318cc384-e8ba-465f-8469-1235fce91ef0" definitionName="Publishes" instanceName="Publishes / Sends" />
+                            <collection Id="6d179cde-f611-476e-a8e1-e94f6f3470c8" definitionId="ffcf83ed-8aca-42ea-bebd-af35d17f23be" definitionName="Subscribes" instanceName="Subscribes / Processes">
+                              <elements>
+                                <element Id="c99c3ff4-5187-4d12-886d-9e723c3ec0a2" definitionId="1362e8eb-d279-4f17-82a0-97504b493ab3" definitionName="ProcessedCommandLink" instanceName="SubmitOrder">
+                                  <properties>
+                                    <property Id="9bd7ad2f-6bf6-48c9-bb01-5d0cb531dea8" definitionId="bb37f0f8-13a2-4b26-8b00-f900c5c42e37" definitionName="CommandId" rawValue="84294897-a115-482d-a2f1-05d1a7299deb" />
+                                    <property Id="7dcc0a2e-84fa-4b1c-9860-5a7d4354c25a" definitionId="30899b31-2dfa-4a01-a00a-e86c90b4bf5d" definitionName="CommandName" rawValue="SubmitOrder" />
+                                    <property Id="e775b079-6908-4708-9d2f-5cde2e5a9ff4" definitionId="ab1926d8-63cc-4404-89fc-db24e1a18f3d" definitionName="Namespace" />
+                                    <property Id="e4f3e370-35c5-4a03-b567-bcaa95a6dd19" definitionId="9a3afb25-11d0-40d5-a5a7-c580ecf96d28" definitionName="PublishesAnEvent" rawValue="False" />
+                                    <property Id="4ebafeaa-557b-461a-8cbe-55d7983ce5ed" definitionId="f0e71c5e-3f90-4257-b86d-546f78e97196" definitionName="CommandCodeIdentifier" rawValue="SubmitOrder" />
+                                    <property Id="aca654cb-bea9-42e8-abb0-05fcc0e0bde8" definitionId="02d7bc46-2773-4929-8db8-71a2bba5bfb3" definitionName="StartsSaga" rawValue="False" />
+                                  </properties>
+                                </element>
+                              </elements>
+                            </collection>
+                          </elements>
+                        </element>
+                      </elements>
+                    </collection>
                   </elements>
                 </element>
               </elements>
