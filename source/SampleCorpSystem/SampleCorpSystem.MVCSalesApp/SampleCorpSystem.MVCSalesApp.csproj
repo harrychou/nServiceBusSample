@@ -81,7 +81,7 @@
     </Compile>
     <Compile Include="Infrastructure\ConfigureMvcDependencyInjection.cs" />
     <Compile Include="Infrastructure\GeneratedCode\Sales\SubmitOrderSender.cs">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f2a05ec5e-0afc-4417-b26e-c354236c75e4</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fe64813f8-16cc-4a82-8c90-4c1eabbdc067</SourceModelReference>
       <ItemGuid>66971b83-7a3e-4a13-9b0e-4e8f3c46f0a3</ItemGuid>
     </Compile>
     <Compile Include="Infrastructure\MessageConventions.cs">
