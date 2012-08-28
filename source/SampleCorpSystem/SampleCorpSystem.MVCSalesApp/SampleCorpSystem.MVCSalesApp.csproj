@@ -81,7 +81,7 @@
     </Compile>
     <Compile Include="Infrastructure\ConfigureMvcDependencyInjection.cs" />
     <Compile Include="Infrastructure\GeneratedCode\Sales\SubmitOrderSender.cs">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fe64813f8-16cc-4a82-8c90-4c1eabbdc067</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fe64813f8-16cc-4a82-8c90-4c1eabbdc067</SourceModelReference>
       <ItemGuid>66971b83-7a3e-4a13-9b0e-4e8f3c46f0a3</ItemGuid>
     </Compile>
     <Compile Include="Infrastructure\MessageConventions.cs">
@@ -183,21 +183,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>410b7133-9c33-4a4a-a802-58d79ce23017</ItemGuid>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\MsmqTransportConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>d85e4114-1f1e-40a4-b890-df3026668504</ItemGuid>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>7dfa5e29-04bf-4173-be3e-5e886836f81c</ItemGuid>
     </Content>
@@ -210,7 +210,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MVCSalesApp.endpoints">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252fdb4e3ab4-310a-48e3-b54f-3a271f35bc95</SourceModelReference>
       <ItemGuid>1419c1e8-c4c0-4713-819b-09e7a1492200</ItemGuid>
     </None>
   </ItemGroup>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CF050DF-4BD2-4E3B-AB34-B7EB819E6E72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SampleCorpSystem.BillingProcessingApp</RootNamespace>
+    <AssemblyName>SampleCorpSystem.BillingProcessingApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus">
+      <HintPath>..\packages\NServiceBus.3.2.7\lib\net40\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\packages\NServiceBus.3.2.7\lib\net40\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\packages\NServiceBus.Host.3.2.7\lib\net40\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billing\OrderAcceptedProcessor.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f2d8d5d55-6d5d-47a0-9f8f-8a712feeb1c6</SourceModelReference>
+      <ItemGuid>086eeb00-ed41-4d8b-97d4-9163075bc7f9</ItemGuid>
+    </Compile>
+    <Compile Include="EndpointConfig.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <ItemGuid>fb036808-710b-476f-8b1a-0eed7492e166</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\GeneratedCode\Billing\OrderAcceptedProcessor.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f2d8d5d55-6d5d-47a0-9f8f-8a712feeb1c6</SourceModelReference>
+      <ItemGuid>37694880-99cf-45b6-919b-e6e7df048554</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\MessageConventions.cs">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <ItemGuid>78ba1292-878f-4a93-81b1-e254e1e955db</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>48ad634e-0df7-4e24-a8cc-809718f35d3f</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>10b38e38-ceaf-4731-84e4-b3137de92688</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\MsmqTransportConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>1d5c474e-d4fb-4b5f-90ed-5b51848fa003</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>945e2b1f-6cbf-47be-acdd-226d92796061</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>b8bef1e4-12e7-4e2c-9190-8b4174831e67</ItemGuid>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <ItemGuid>e2bb0cc7-358c-49c5-8d34-59f9a39cdc96</ItemGuid>
+    </None>
+    <Content Include="Infrastructure\Logging.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>51c66f97-d1d8-4ec7-85cf-af152bdd8382</ItemGuid>
+    </Content>
+    <None Include="BillingProcessingApp.endpoints">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <ItemGuid>6e798e74-a8f9-4609-8ef1-aa3672192b0e</ItemGuid>
+    </None>
+    <None Include="packages.config">
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f6cd09dbe-e4c3-4b9e-9e48-8dc1ed68a782</SourceModelReference>
+      <ItemGuid>23cd3744-c4cc-41dd-ac60-3e3101d74a4b</ItemGuid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleCorpSystem.Contract\SampleCorpSystem.Contract.csproj">
+      <Project>{F9CE1175-E2EE-45A2-A483-0264850A7F31}</Project>
+      <Name>SampleCorpSystem.Contract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

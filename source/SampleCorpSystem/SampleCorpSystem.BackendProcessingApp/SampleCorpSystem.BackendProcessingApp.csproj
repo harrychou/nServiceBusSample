@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndpointConfig.cs">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <ItemGuid>c3ded1a1-20a9-481a-9854-29dbd9c88ba5</ItemGuid>
     </Compile>
     <Compile Include="Infrastructure\GeneratedCode\Sales\SubmitOrderProcessor.cs">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f96e53701-01fb-4559-a10e-74370399ee6e</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Element/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f96e53701-01fb-4559-a10e-74370399ee6e</SourceModelReference>
       <ItemGuid>52a8c15f-3391-403c-a67c-fd28d0e53d84</ItemGuid>
     </Compile>
     <Compile Include="Infrastructure\MessageConventions.cs">
@@ -70,35 +70,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>93e01216-88ee-4b7c-bad1-bc05d353957e</ItemGuid>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>b32ef3c5-6e80-49a6-808a-8183c766437c</ItemGuid>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\MsmqTransportConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>f3f82502-fb1e-4e3e-ab2b-b2bbbac1d8d3</ItemGuid>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>3b06944d-92c7-4482-8197-53f39f96b28d</ItemGuid>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ItemGuid>b7c2e421-aac5-4b77-8d7a-783a5ef95463</ItemGuid>
     </Content>
@@ -114,7 +114,7 @@
       <ItemGuid>8357db30-dcf3-4c7c-9b28-73a22ea1aaf9</ItemGuid>
     </Content>
     <None Include="BackendProcessingApp.endpoints">
-      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry Chou\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
+      <SourceModelReference>modelbus://Microsoft.VisualStudio.Patterning.Runtime.Store/SampleCorpSystem/Product/C:\Users\Harry\Documents\GitHub\nServiceBusSample\source\SampleCorpSystem\SampleCorpSystem.slnbldr%252f51358636-7698-409e-8fd2-d12b0fb0e34b</SourceModelReference>
       <ItemGuid>8a75da60-4222-4a45-a5cc-34f010527e17</ItemGuid>
     </None>
     <None Include="packages.config">
@@ -123,6 +123,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SampleCorpSystem.Contract\SampleCorpSystem.Contract.csproj">
+      <Project>{F9CE1175-E2EE-45A2-A483-0264850A7F31}</Project>
+      <Name>SampleCorpSystem.Contract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SampleCorpSystem.InternalMessages\SampleCorpSystem.InternalMessages.csproj">
       <Project>{3F890798-937A-4B53-B656-0460E3A4DF86}</Project>
       <Name>SampleCorpSystem.InternalMessages</Name>

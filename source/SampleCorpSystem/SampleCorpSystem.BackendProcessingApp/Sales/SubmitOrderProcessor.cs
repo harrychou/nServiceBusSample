@@ -1,5 +1,5 @@
 ﻿using System;
-using NServiceBus;
+using SampleCorpSystem.Contract.Sales;
 using SampleCorpSystem.InternalMessages.Sales;
 
 
@@ -12,6 +12,8 @@ namespace SampleCorpSystem.BackendProcessingApp.Sales
         {
             // Implement your handler logic here.
             Console.WriteLine("Sales received " + message.GetType().Name);
+
+            Bus.Publish<OrderAccepted>();
         }
 
 	}
